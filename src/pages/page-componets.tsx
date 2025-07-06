@@ -49,9 +49,12 @@ export default function PageComponents(){
               <Badge loading>2 de 5</Badge>
             </div>
     
-            <div>
+            <div className="flex gap-1">
               <Button icon={PlusIcon}>
                 Nova Tarefa
+              </Button>
+              <Button handling icon={PlusIcon}>
+                Criando...
               </Button>
             </div>
     
@@ -60,6 +63,7 @@ export default function PageComponents(){
               <ButtonIcon icon={TrashIcon} variant={"secondary"}/>
               <ButtonIcon icon={TrashIcon} variant={"tertiary"}/>
               <ButtonIcon loading icon={TrashIcon}/>
+              <ButtonIcon handling icon={TrashIcon}/>
             </div>
     
             <div className="flex gap-1">
